@@ -1,0 +1,122 @@
+/*
+* To change this license header, choose License Headers in Project Properties.
+* To change this template file, choose Tools | Templates
+* and open the template in the editor.
+*/
+package biglabassnpart1_king;
+import javax.swing.*;
+ 
+/**
+*
+* Justin King
+* Big Lab Assignment Part 1 
+* To display a message giving a student grade based on user input
+*/
+public class BigLabAssnPart1_King {
+ 
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        //Creates a box to inform for Section A
+        JOptionPane.showMessageDialog(null, "Section A");
+        // Creates variables
+        int gradeActual = 85;
+        
+        //Begins an if statement to display the grade for the student 
+        
+        if (gradeActual >=75){
+            JOptionPane.showMessageDialog(null, "Congratulations, you Pass " + "\n" + "Please sign up for C202");
+        }        
+        //Creates a prompt to inform the Begining of Section B
+        JOptionPane.showMessageDialog(null, "Section B");
+        
+        //Begins the if statement to determing pass or fail
+        gradeActual = 70;
+        
+        if (gradeActual >= 75){
+            JOptionPane.showMessageDialog(null, "Congratulations, you pass");
+        }
+        else 
+            JOptionPane.showMessageDialog(null, "Sorry, You fail");
+        
+        //Begins Section C
+        //Creates a prompt to show begining of section C
+        JOptionPane.showMessageDialog(null, "Section C");
+        
+        //Shows a dialog box for perfect grade
+        gradeActual = 100;
+        
+        if (gradeActual == 100){
+            JOptionPane.showMessageDialog(null, "Perfect!");
+        }
+        else 
+            JOptionPane.showMessageDialog(null, "Moving on to section D");
+        
+        //Creates a prompt to show the begining of section D
+        JOptionPane.showMessageDialog(null, "Section D");
+        
+        // begins if statement to prompt an "A"
+        gradeActual = 95;
+        
+        if (gradeActual >= 90){
+            JOptionPane.showMessageDialog(null, "You got an A!");
+        }
+        else 
+            JOptionPane.showMessageDialog(null, "Moving on to Section E");
+        
+        // Creates a prompt to show the begining of section E
+        
+        JOptionPane.showMessageDialog(null, "Section E");
+        
+        //Begins the if statement to show a failing grade
+        gradeActual = 50;
+        
+        if (gradeActual >= 0 && gradeActual <= 60){
+            JOptionPane.showMessageDialog(null, "Sorry, you failed");
+        }
+        else 
+            JOptionPane.showMessageDialog(null, "Moving on to Section F");
+        
+        //Creates a prompt to show begining of section F
+        
+        JOptionPane.showMessageDialog(null, "Section F");
+        
+        //Begins if statement to show for bonus credit
+        gradeActual = 110;
+        
+        if (gradeActual > 100){
+            JOptionPane.showMessageDialog(null, "Bonus credit!");
+        }
+        else
+            JOptionPane.showMessageDialog(null, "Moving on to Section G");
+        
+        //Creates a prompt showing begining of section G
+        
+        JOptionPane.showMessageDialog(null, "Section G");
+        
+        //begins if statement to show grade letter
+        gradeActual = 90;
+        
+        if (gradeActual >= 90){
+            JOptionPane.showMessageDialog(null, "A grade of " + gradeActual + " is an A");
+        }
+        else
+            if (gradeActual < 90 && gradeActual >= 80){
+                JOptionPane.showMessageDialog(null, "A grade of " + gradeActual + " is a B");
+            }
+            else
+                if (gradeActual < 80 && gradeActual >= 70){
+                    JOptionPane.showMessageDialog(null, "A grade of " + gradeActual + " is a C");
+                }
+                else 
+                    if (gradeActual < 70 && gradeActual >= 60){
+                        JOptionPane.showMessageDialog(null, "A grade of " + gradeActual + " is a D");
+                    }
+                    else 
+                        if (gradeActual < 60){
+                            JOptionPane.showMessageDialog(null, "A grade of " + gradeActual + " is an F");
+                        }
+    }
+    
+}
